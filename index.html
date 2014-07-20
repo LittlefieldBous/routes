@@ -1,0 +1,29 @@
+<!doctype html>
+
+<!--Amy Littlefield-Bousamra
+Full Sail University
+Instructor: Sean Bernath
+Example 2
+-->
+
+<html>
+<head>
+    <title>Routing Test</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src= "js/app.js"></script>
+</head>
+
+<body ng-app ="MyApp" ng-controller="MyAppController">
+<h1>Routing</h1>
+    <div>
+      <p>
+	    <a href="#/view1">Go to View1</a> | <a href="#/view2">Go to View2</a>
+	      
+      </p>
+     <div>
+     <div ng-view></div>
+     
+     
+     </body>
+</html>
