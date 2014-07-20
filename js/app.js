@@ -24,7 +24,7 @@ controller : "View1Controller" //what controller it should use for the view
   })
   
   
-  controller("View2Controller", function($scope){
+  .controller("View2Controller", function($scope){
   $scope.test = "Hello World 2";
 
   
@@ -38,6 +38,4 @@ $scope.test = "Hello World";
  }) 
  
  
- 
-  
  
