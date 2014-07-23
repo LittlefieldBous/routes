@@ -1,0 +1,44 @@
+
+
+
+<body ng-app="MyApp">
+
+<img alt="full screen background image" src="images/tableclothbg.jpg" id="full-screen-background-image" />
+
+<header>
+    <h2>Add Your Recipe Here</h2>
+    <img src="images/chef.png" alt="cartoon chef" title="chef" width="25%" height="25%" />
+</header>
+
+
+<div ng-controller = "View1Controller">
+
+
+    <form name="form" novalidate class="css-form">
+
+        <label>Title of Recipe</label><br>
+        <input type="text" ng-model = "recipe_title" /><br><br>
+
+        <label>Ingredients</label><br>
+        <textarea type="text"  ng-model = "recipe_ingredients"></textarea><br><br>
+
+        <label>Directions:</label><br>
+        <textarea type="text"  ng-model = "recipe_directions"></textarea><br><br>
+
+        <label>Notes:</label><br>
+        <textarea type="text"  ng-model = "recipe_notes"></textarea><br><br>
+
+        <label>Category:</label><br>
+        <input type="text"  ng-model = "recipe_category"/><br><br>
+
+        <div id="addbtn">
+            <button type="submit" ng-click="addRecipe()">Add Recipe</button>
+        </div>
+
+    </form>
+
+
+</div>
+</body>
+</html>
+
