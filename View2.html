@@ -6,27 +6,34 @@
 
 <img alt="full screen background image" src="images/tableclothbg.jpg" id="full-screen-background-image" />
 
-<header>
-    <h2>My Recipes</h2>
-</header>
+<h2>My Recipes at a Glance!</h2>
 
-<div id="recipeBox">
+    <div id="recipeBox">
+
     <div ng-repeat="recipe in Recipes">
-        <ul>
-         <img ng-src="images/{{recipe.shortname}}_tn.jpg" alt="Photo of {{recipe.title}}">
-            <li>{{recipe.title}}</li>
+
+
+       <div id="header">
+         <button ng-click = "deleteRecipes(recipe)" id="delete">X</button>
+         <h3>{{recipe.title}}</h3>
+         <img ng-src="images/{{recipe.shortname}}_tn.jpg" alt="Photo of {{recipe.title}}" id="images">
+        </div> <!--end of header-->
+
+        <div id="box">
+            <ul>
             <li><strong>Ingredients:</strong>{{recipe.ingredients}}</li>
             <li><strong>Directions:</strong>{{recipe.directions}}</li>
             <li><strong>Notes:</strong>{{recipe.notes}}</li>
             <li><strong>Category:</strong>{{recipe.category}}</li>
-
-            <button ng-click = "deleteRecipes(recipe)" id="delete">X</button>
-        </ul>
-
-    </div>
-</div>
+           </ul>
+         </div> <!--end of box-->
 
 
-</div>
+      </div> <!--end of recipe box-->
+
+
+    </div>  <!--end of ng repeat-->
+
+</div> <!--end of ng controller-->
 
 </body>

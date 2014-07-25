@@ -31,7 +31,7 @@ controller : "View1Controller" //what controller it should use for the view
 
         $scope.addRecipe = function() {
             dataService.addRecipe({
-                recipe: $scope.recipe_title,
+                title: $scope.recipe_title,
                 ingredients: $scope.recipe_ingredients,
                 directions: $scope.recipe_directions,
                 category: $scope.recipe_category,
@@ -44,7 +44,7 @@ controller : "View1Controller" //what controller it should use for the view
             $scope.recipe_category = '';
             $scope.recipe_notes = '';
 
-        }
+        };
 
 
         $scope.deleteRecipes = function(deletedRecipes){
@@ -60,7 +60,9 @@ controller : "View1Controller" //what controller it should use for the view
   .controller("View2Controller", function($scope){
   $scope.test = "Hello World 2";
 
-  
+
+
+
   })
   
   
